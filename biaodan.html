@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结婚注册</title>
+    <style>
+      body{
+            height: 800px;
+            width: 600px;
+            border: orange solid;
+            font-size: 20px;
+            font-family: 微软雅黑;
+            margin: 0 auto;
+        }
+        .w{
+            margin: 0 0;
+
+            background-color: red;
+            text-align: center;
+        }
+    .wan{
+        color: blue;
+    }
+    .wtz{
+        color: blue;
+    }
+    
+    </style>
+ 
+</head>
+
+<h3 class="w" >青春不常在，抓紧谈恋爱</h3>
+    <table width="600" >
+        <tr>
+            <td> 姓名：</td>
+            <td>
+                <input type="text" name="nan" class="ting">
+                <span class="wan">填写6到16位数字、字符或汉字</span> 
+               
+            </td>
+        </tr>
+     
+        <tr>
+            <td> 密码：</td>
+            <td>
+                <input type="password" name="nan" class="psw">
+                <span class="wtz">填写6到16位数字、字符或汉字</span> 
+               
+            </td>
+        </tr>
+        
+        <tr>
+            <td> 性别：</td>
+            <td>
+                男<input type="radio" name="nan">
+                女<input type="radio" name="nan">
+            </td>
+        </tr>
+        <tr>
+            <td>生日:</td>
+            <td>
+                <select>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option selected="selected">请选择年</option>
+                </select>
+                <select>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                    <option selected="selected">请选择月</option>
+                </select>
+                <select>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                    <option selected="selected">请选择日</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区:</td>
+            <td><input type="text" value="填写地址"></td>
+        </tr>
+        <tr>
+            <td>婚姻状况：</td>
+            <td>
+                未婚<input type="radio" name="hunyin">
+                已婚<input type="radio" name="hunyin">
+                离婚<input type="radio" name="hunyin">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>学历:</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>喜欢类型：</td>
+            <td>
+                妩媚的<input type="checkbox">
+                可爱的<input type="checkbox">
+                小鲜肉<input type="checkbox">
+                老腊肉<input type="checkbox">
+                都喜欢<input type="checkbox">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>自我介绍：</td>
+            <td>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="免费注册"></td>
+        </tr>
+
+
+
+        <tr>
+            <td></td>
+            <td>
+                <h3>我承诺</h3>
+                <ul>
+                    <li>年满18岁</li>
+                    <li>抱着严实的态度</li>
+                    <li>真诚寻找另一半</li>
+                </ul>
+            </td>
+        </tr>
+
+   
+    </table>
+
+
+     <script>
+            var text =document.querySelector('.ting')
+            var psw =document.querySelector('.psw')
+            var wan =document.querySelector('.wan')
+            var yanse=document.querySelector('.wtz')
+            text.onblur=function(){
+                if(text.value.length<6 || text.value.length>16){
+                    wan.style.color='red';
+                    wan.innerHTML='输入错误';
+                }else{
+                    wan.innerHTML='';
+
+                }
+            }
+
+            psw.onblur=function(){
+                if(psw.value.length<6 || psw.value.length>16){
+                    yanse.style.color='red';
+                    yanse.innerHTML='输入错误';
+    
+                }else{
+                    yanse.innerHTML='';
+
+                }
+            }
+        </script>
+
+</body>
+
+</html>
